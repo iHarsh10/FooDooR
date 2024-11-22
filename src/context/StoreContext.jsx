@@ -31,6 +31,10 @@ const StoreContextProvider = (props) => {
         return totalAmount;
     }
 
+    const clearCart = () => {
+        setCartItems({});
+    }
+
 
     const contextValue = {
         food_list,
@@ -38,7 +42,8 @@ const StoreContextProvider = (props) => {
         setCartItems,
         addToCart,
         removeFromCart,
-        getTotalCartAmount
+        getTotalCartAmount,
+        clearCart,
     }
 
     return (
