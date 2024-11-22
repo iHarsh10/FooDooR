@@ -126,7 +126,6 @@ const PaymentSystem = ({ onPaymentComplete }) => {
                     className="payment-input"
                     required
                   />
-                  <Lock className="input-icon" />
                 </div>
               </div>
 
@@ -137,7 +136,7 @@ const PaymentSystem = ({ onPaymentComplete }) => {
                   type="text"
                   value={cardName}
                   onChange={(e) => setCardName(e.target.value)}
-                  placeholder="John Doe"
+                  placeholder="Harshvardhan"
                   className="payment-input"
                   required
                 />
